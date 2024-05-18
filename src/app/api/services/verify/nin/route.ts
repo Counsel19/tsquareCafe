@@ -49,7 +49,7 @@ export async function POST(req: Request) {
       res = await vninVerify(vnin);
     }
 
-    if (res.data?.status) {
+    if (res.data?.status && res.data?.message.constructor === Object) {
       const photoUrlStringNew = res.data.message?.photo?.replace(/\n/g, "");
       const signatureUrlStringNew = res.data.message?.signature?.replace(
         /\n/g,
