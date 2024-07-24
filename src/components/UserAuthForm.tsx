@@ -260,7 +260,7 @@ const UserAuthForm: FC<UserAuthFormProps> = ({ signupPage }) => {
 
       <hr className="my-6 border-gray-300 w-full" />
 
-      <Button
+      {/*<Button
         size="lg"
         isLoading={isLoadingGoogle}
         onClick={loginWithGoogle}
@@ -268,7 +268,7 @@ const UserAuthForm: FC<UserAuthFormProps> = ({ signupPage }) => {
       >
         {isLoadingGoogle ? null : <Icons.google className="h-4 w-4 mr-2" />}
         <span className="ml-4">Log in with Google</span>
-      </Button>
+      </Button>*/}
     </div>
   );
 };
